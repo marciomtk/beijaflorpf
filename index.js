@@ -35,19 +35,19 @@ app.get('/health', (req,res) => {
          }
      };
  
-     pdf.create(html,options).toBuffer((error, buffer) =>{
+     pdf.create(html,options).toBuffer(function (error, buffer) {
          if (error) {
-             return res.json({message:'falha'}); 
-         } 
- 
+             return res.json({ message: 'falha' });
+         }
+
          var fileContents = Buffer.from(buffer, "base64");
-   
+
          var readStream = new stream.PassThrough();
          readStream.end(fileContents);
- 
+
          res.set('Content-disposition', 'attachment; filename=' + nomedoc);
          res.set('Content-Type', 'application/pdf');
- 
+
          readStream.pipe(res);
      })
  
