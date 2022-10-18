@@ -4,16 +4,16 @@ const path = require('path');
 const pdf = require('html-pdf');
 const ejs = require('ejs');
 const cors = require('cors');
-app.use(express.json());
+
 const stream = require('stream');
 
 app.use(cors());
-
+app.use(express.json());
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
     res.sendFile('index.html', {root: path.join(__dirname, 'public')});
-})
+});
 
 app.get('/health', (req,res) => {
     return res.json({ message: 'Servidor funcionando normalmente.' })     
@@ -37,7 +37,7 @@ app.get('/health', (req,res) => {
  
      pdf.create(html,options).toBuffer(function (error, buffer) {
          if (error) {
-             return res.json({ message: 'falha no create' });
+             return res.status(500).json({ message: 'falha no create' });
          }
 
          var fileContents = Buffer.from(buffer, "base64");
