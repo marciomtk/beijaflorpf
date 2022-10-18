@@ -37,7 +37,7 @@ app.get('/health', (req,res) => {
  
      pdf.create(html,options).toBuffer(function (error, buffer) {
          if (error) {
-             return res.json({ message: 'falha' },error);
+             return res.json({ message: `falha : ${error}` });
          }
 
          var fileContents = Buffer.from(buffer, "base64");
