@@ -1,0 +1,19 @@
+{
+  "name": "beijaflorpdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "text.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marciomtk/beijaflorpf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marciomtk/beijaflorpf/issues"
+  },
+  "homepage": "https://github.com/marciomtk/beijaflorpf#readme"
+}
