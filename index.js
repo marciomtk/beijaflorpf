@@ -23,7 +23,7 @@ app.get('/health', (req,res) => {
  app.post('/pedido', (req,res) => {
     const dados =req.body;
     const nomedoc=dados.nomedoc;
-    ejs.renderFile('./public/index.ejs', dados, (err, html) =>{
+    ejs.renderFile('./public/modelo/index.ejs', dados, (err, html) =>{
      if (err){
          return res.status(500).json({message: 'erro no servidor', err});
      }
