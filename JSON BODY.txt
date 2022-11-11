@@ -1,0 +1,43 @@
+{
+   "nomedoc":"Pedido - 545215 : 1215112151121",
+   "logo":"https://i.pinimg.com/564x/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg",
+   "numpedido":"1253",
+   "nomevendedor":"Marcio Alves",
+   "data_pedido":"15/10/2022",
+   "nomecliente":"Pedro cardoso",
+   "telefonecliente":"(73)99999-8080",
+   "cnpj":"00.0000.0000/01",
+   "empresa":"Rino Code Tecnologia LTDA",
+   "observacao":"Entrega no periodo da tarde pelo fundo",
+   "subtotal":"$ 500,00",
+   "desconto":"$ 0,00",
+   "total":"$ 500,00",
+   "statuspedido":"sincronizado - Cód : 12021",
+   "pagamento":[
+      {
+         "nomepag":"dinheiro",
+         "valor":"$ 20,00"
+      },
+      {
+         "nomepag":"dinheiro",
+         "valor":"$ 120,00"
+      }],
+   "itens":[
+      {
+         "descricao":"PERFUME ARMANI 100ML",
+         "quantidade":"1,000",
+         "unidade":"UN",
+         "valor":"$ 10,00",
+         "total":"$ 20,00"
+      },
+      {
+         "descricao":"PERFUME FERRARI BLACK 100ML",
+         "quantidade":"1,000",
+         "unidade":"UN",
+         "valor":"$ 10,00",
+         "total":"$ 20,00"
+      }]
+   
+
+}
+   

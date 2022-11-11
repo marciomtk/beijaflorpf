@@ -37,7 +37,7 @@ app.get('/health', (req,res) => {
  
      pdf.create(html,options).toBuffer(function (error, buffer) {
          if (error) {
-             return res.status(500).json({ message: 'falha no create' });
+             return res.status(500).json({ message: 'falha ao criar' });
          }
 
          var fileContents = Buffer.from(buffer, "base64");
